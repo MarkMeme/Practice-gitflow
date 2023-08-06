@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+
 import 'package:practice_gitflow/app_colors.dart';
+
+import 'package:practice_gitflow/my_button.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -56,7 +60,9 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
 
           mainAxisAlignment: MainAxisAlignment.center,
+          //crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
+            const MyButton(),
             const Text(
               'You have pushed the button this many times:',
             ),
