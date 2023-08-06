@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+
+import 'package:practice_gitflow/app_colors.dart';
+
 import 'package:practice_gitflow/my_button.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -14,6 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        colorSchemeSeed: AppColors.primaryColor,
         useMaterial3: true,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
